@@ -71,14 +71,11 @@
     <con:service type="REST" name="Service 1">
       <con:endpoint authProfile="Inherit From Parent" username="" password="" domain="" incomingWss="" outgoingWss="" wssTimeToLive="" wssType="">http://rapis02.aqa.com.ru</con:endpoint>
     </con:service>
-    <con:service type="GraphQL" name="Graph">
+    <con:service type="GraphQL" name="GraphQL Service 1">
       <con:endpoint authProfile="Inherit From Parent" username="" password="" domain="" incomingWss="" outgoingWss="" wssTimeToLive="" wssType="">http://rapis02.aqa.com.ru:4005/graphql</con:endpoint>
     </con:service>
     <con:service type="REST" name="http://localhost:9989">
       <con:endpoint authProfile="Inherit From Parent" username="" password="" domain="" incomingWss="" outgoingWss="" wssTimeToLive="" wssType="">http://localhost:9989</con:endpoint>
-    </con:service>
-    <con:service type="REST" name="http://SraniyGit">
-      <con:endpoint authProfile="Inherit From Parent"/>
     </con:service>
     <con:property>
       <con:name>ProjectProperty</con:name>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operationGroup type="mutation" name="Mutations" id="c8284f86-0ec6-4146-82fb-79a6949c03f3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c8284f86-0ec6-4146-82fb-79a6949c03f3fileName">Mutations</con:setting>
+  </con:settings>
+  <con:graphQLOperation name="addCustomer" bindingOperationName="addCustomer" id="4ccb2f3e-1e03-45b2-97c8-b41b90c32a5c">
+    <con:settings/>
+    <con:graphQLRequest name="addCustomer" id="984c6251-4cff-4302-9d89-f3b08bf0c62c">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru:4005/graphql</con:endpoint>
+      <con:request>{"query":"mutation {\n  addCustomer(name: \"string\", email: \"string\", age: 0) {\n    id\n    name\n    email\n    age\n    gender\n    status\n    products {\n      productID\n      productName\n      quantity\n      info {\n        made\n        design\n        warranty\n        AnnualFailureRate\n      }\n      availableIn\n    }\n    data {\n      LicenseType\n      Status\n    }\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:environmentSpec>
+        <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:graphQLRequest>
+  </con:graphQLOperation>
+  <con:graphQLOperation name="editCustomer" bindingOperationName="editCustomer" id="d918a91c-200f-4152-bfb3-531eae28783d">
+    <con:settings/>
+    <con:graphQLRequest name="editCustomer" id="a5c4959a-8f5f-4bf3-8a3c-b95bde6062ff">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru:4005/graphql</con:endpoint>
+      <con:request>{"query":"mutation {\n  editCustomer(id: \"string\", name: \"string\", email: \"string\", age: 0, gender: MALE, extraData: \"string\") {\n    id\n    name\n    email\n    age\n    gender\n    status\n    products {\n      productID\n      productName\n      quantity\n      info {\n        made\n        design\n        warranty\n        AnnualFailureRate\n      }\n      availableIn\n    }\n    data {\n      LicenseType\n      Status\n    }\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:environmentSpec>
+        <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:graphQLRequest>
+  </con:graphQLOperation>
+  <con:graphQLOperation name="addAuthor" bindingOperationName="addAuthor" id="419b8855-1613-4cd5-b345-62d0038c52c9">
+    <con:settings/>
+    <con:graphQLRequest name="addAuthor" id="3340dc53-3df7-48af-a741-2fc05ea34cb0">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru:4005/graphql</con:endpoint>
+      <con:request>{"query":"mutation {\n  addAuthor(input: {author : \"string\", content : \"string\"}) {\n    author\n    content\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:environmentSpec>
+        <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:graphQLRequest>
+  </con:graphQLOperation>
+  <con:graphQLOperation name="addProduct" bindingOperationName="addProduct" id="53e7f020-f168-41de-93ae-68eac9f8302a">
+    <con:settings/>
+    <con:graphQLRequest name="addProduct" id="dcc884ce-8e56-448c-8795-b83347c2dd5b">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru:4005/graphql</con:endpoint>
+      <con:request>{"query":"mutation {\n  addProduct(productID: 0, productName: \"string\", quantity: 0) {\n    productID\n    productName\n    quantity\n    info {\n      made\n      design\n      warranty\n      AnnualFailureRate\n    }\n    availableIn\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:environmentSpec>
+        <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:graphQLRequest>
+  </con:graphQLOperation>
+</con:operationGroup>

@@ -675,7 +675,7 @@ From Test</con:query>
   </con:testStep>
   <con:testStep name="GraphQL Query" type="graphqltestqueryrequest" id="82ae54f9-13a0-4b21-8aa3-11721c6099e3">
     <con:settings/>
-    <con:config interface="Graph" operationName="customer" operationType="query" xsi:type="con:GraphQLTestRequestWithSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config interface="GraphQL Service 1" operationName="customer" operationType="query" xsi:type="con:GraphQLTestRequestWithSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:request name="GraphQL Query" id="76bd5f53-cb07-4177-81af-3fd364a50fc7">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -690,7 +690,7 @@ From Test</con:query>
   </con:testStep>
   <con:testStep name="GraphQL Mutation" type="graphqltestmutationrequest" id="947f561f-1090-466b-8ef5-5879cc8e2d3f">
     <con:settings/>
-    <con:config interface="Graph" operationName="editCustomer" operationType="mutation" xsi:type="con:GraphQLTestRequestWithSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config interface="GraphQL Service 1" operationName="editCustomer" operationType="mutation" xsi:type="con:GraphQLTestRequestWithSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:request name="GraphQL Mutation" id="a5c4959a-8f5f-4bf3-8a3c-b95bde6062ff">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
