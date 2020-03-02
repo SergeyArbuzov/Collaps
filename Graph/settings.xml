@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface xsi:type="con:GraphQLService" id="8e221702-5bed-46cc-b00b-5bdbc73336bb" name="GraphQL Service 1" type="graphql" definitionUrl="http://rapis02.aqa.com.ru:4005/schema.graphqls" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:interface xsi:type="con:GraphQLService" id="8e221702-5bed-46cc-b00b-5bdbc73336bb" name="Graph" type="graphql" definitionUrl="http://rapis02.aqa.com.ru:4005/schema.graphqls" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="8e221702-5bed-46cc-b00b-5bdbc73336bbfileName">GraphQL-Service-1</con:setting>
+    <con:setting id="8e221702-5bed-46cc-b00b-5bdbc73336bbfileName">Graph</con:setting>
   </con:settings>
   <con:definitionCache type="TEXT" rootPart="http://rapis02.aqa.com.ru:4005/schema.graphqls">
     <con:part>

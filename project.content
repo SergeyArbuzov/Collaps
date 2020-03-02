@@ -41,7 +41,7 @@ Test_serviceSoap\test_ushort.xml
 Test_serviceSoap\transfer_XML.xml
 Test_serviceSoap\transfer_array.xml
 Service-1\ConStroka.xml
-Service-1\Date.xml
+Service-1\Resource.xml
 Service-1\GetAllRecords.xml
 Service-1\HelloWorld.xml
 Service-1\InputDate.xml
@@ -88,8 +88,8 @@ Xmlrpcapi.rem\XmlRpc.TestString.xml
 Xmlrpcapi.rem\XmlRpc.TestStringArray.xml
 Xmlrpcapi.rem\XmlRpc.TestStruct.xml
 Xmlrpcapi.rem\XmlRpc.TestTwoParameters.xml
-GraphQL-Service-1\Mutations.xml
-GraphQL-Service-1\Queries.xml
+Graph\Mutations.xml
+Graph\Queries.xml
 http%3A%2F%2Flocalhost%3A9989\.xml
 http%3A%2F%2Flocalhost%3A9989\Child.xml
 http%3A%2F%2Flocalhost%3A9989\Empty.xml
