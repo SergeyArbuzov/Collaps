@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="" id="e8441d25-5f28-4e23-b7c1-e0351a7db3eb" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e8441d25-5f28-4e23-b7c1-e0351a7db3ebfileName"/>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="eb48d5b4-5da9-4d5c-9d3f-366f2e0a5eab" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="79de2e8e-470c-4a63-b3b2-24734cd6bf18" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://SraniyGit</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>
