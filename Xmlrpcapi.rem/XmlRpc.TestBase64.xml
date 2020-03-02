@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestBase64" help="         Base64       " id="8933dd0d-57e1-4b74-8737-84990715d616" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8933dd0d-57e1-4b74-8737-84990715d616fileName">XmlRpc.TestBase64</con:setting>
+  </con:settings>
+  <con:call id="0efb4e4e-0367-4d05-a548-ddf3d2bf59da" name="Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/xmlrpc/xmlrpcapi.rem</con:endpoint>
+    <con:request><![CDATA[<methodCall>
+<methodName>XmlRpc.TestBase64</methodName>
+<params>
+<param><value><base64></base64></value></param>
+</params>
+</methodCall>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:environmentSpec>
+      <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+        <con:authProfile>No Authorization</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:call>
+  <con:resultParameter>base64</con:resultParameter>
+  <con:parameter>base64</con:parameter>
+</con:method>

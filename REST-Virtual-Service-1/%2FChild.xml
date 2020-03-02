@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/Child" method="GET" resourcePath="/Child" id="fdf8e6b8-9d3d-4af8-99c0-30a3cfcd4dc3" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="fdf8e6b8-9d3d-4af8-99c0-30a3cfcd4dc3fileName">%2FChild</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Children" id="6ad674e9-ad5b-4d14-8142-69ec9f6e24ee" httpResponseStatus="200" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<bookstore>
+   <book category="COOKING">
+      <title lang="test">test</title>
+      <author attribute="1">
+		<firstName>
+			<firstChar>A</firstChar>
+			<secondChar>R</secondChar>
+		</firstName>
+		<secondName>AR</secondName>
+	  </author>
+   </book>
+</bookstore>]]></con:responseContent>
+  </con:response>
+</con:restMockAction>

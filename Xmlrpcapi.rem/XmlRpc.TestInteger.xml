@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestInteger" help="         Four-byte signed integer       " id="dfb77697-4e3f-4a0e-bb00-43e1041dd808" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="dfb77697-4e3f-4a0e-bb00-43e1041dd808fileName">XmlRpc.TestInteger</con:setting>
+  </con:settings>
+  <con:call id="72f9cf2d-06c9-43fd-a609-7a613aec4256" name="Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/xmlrpc/xmlrpcapi.rem</con:endpoint>
+    <con:request><![CDATA[<methodCall>
+<methodName>XmlRpc.TestInteger</methodName>
+<params>
+<param><value><int></int></value></param>
+</params>
+</methodCall>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:environmentSpec>
+      <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+        <con:authProfile>No Authorization</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:call>
+  <con:resultParameter>int</con:resultParameter>
+  <con:parameter>int</con:parameter>
+</con:method>

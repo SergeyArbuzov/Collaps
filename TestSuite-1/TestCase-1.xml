@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="e75966a6-ff44-493c-af8e-896155a5997c" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e75966a6-ff44-493c-af8e-896155a5997cfileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="transfer" name="Property Transfer" id="e6844120-d0f3-4344-ad97-821f664bbae3">
+    <con:settings/>
+    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Global Transfer</con:name>
+        <con:sourceType>Global Property</con:sourceType>
+        <con:sourceStep>#Global#</con:sourceStep>
+        <con:targetType>1</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:type>XQUERY</con:type>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Project Transfer</con:name>
+        <con:sourceType>ProjectProperty</con:sourceType>
+        <con:sourceStep>#Project#</con:sourceStep>
+        <con:sourcePath/>
+        <con:targetType>2</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:targetPath/>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>TetsSuite Transfer</con:name>
+        <con:sourceType>TestSuite Property</con:sourceType>
+        <con:sourceStep>#TestSuite#</con:sourceStep>
+        <con:targetType>3</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>TestCase Transfer</con:name>
+        <con:sourceType>TestCase Property</con:sourceType>
+        <con:sourceStep>#TestCase#</con:sourceStep>
+        <con:targetType>4</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>SOAP Request Transfer</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>SOAP Request</con:sourceStep>
+        <con:sourcePath>declare namespace ns1='http://localhost/test_service/Service1.asmx';
+//ns1:Con_StrokaResponse[1]/ns1:Con_StrokaResult[1]</con:sourcePath>
+        <con:targetType>5</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>DataSource Transfer</con:name>
+        <con:sourceType>DataSource Property</con:sourceType>
+        <con:sourceStep>DataSource</con:sourceStep>
+        <con:sourcePath/>
+        <con:targetType>6</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>REST Request Transfer</con:name>
+        <con:sourceType>z</con:sourceType>
+        <con:sourceStep>REST Request</con:sourceStep>
+        <con:targetType>7</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false" disabled="true">
+        <con:name>DataSource Loop Transfer</con:name>
+        <con:sourceStep>DataSource Loop</con:sourceStep>
+        <con:sourcePath/>
+        <con:targetStep>SOAP Request</con:targetStep>
+        <con:type>JSONPATH</con:type>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>HTTP Request Transfer</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>HTTP Request</con:sourceStep>
+        <con:targetType>8</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>AMF Request Transfer</con:name>
+        <con:sourceType>AMF Request Property</con:sourceType>
+        <con:sourceStep>AMF Request</con:sourceStep>
+        <con:targetType>9</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>JDBC Request Transfer</con:name>
+        <con:sourceType>JDBC Request Property</con:sourceType>
+        <con:sourceStep>JDBC Request</con:sourceStep>
+        <con:targetType>10</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>GraphQL Query Transfer</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>GraphQL Query</con:sourceStep>
+        <con:sourcePath>$['errors'][0]['path'][0]</con:sourcePath>
+        <con:targetType>11</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:type>JSONPATH</con:type>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>GraphQL Mutation Transfer</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>GraphQL Mutation</con:sourceStep>
+        <con:sourcePath>$['data']['editCustomer']['age']</con:sourcePath>
+        <con:targetType>12</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:targetPath/>
+        <con:type>JSONPATH</con:type>
+        <con:targetTransferType>JSONPATH</con:targetTransferType>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>GraphQL Request Transfer</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>GraphQL Request</con:sourceStep>
+        <con:sourcePath>$['code']</con:sourcePath>
+        <con:targetType>13</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:type>JSONPATH</con:type>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>XML-RPC Transfer</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>XML-RPC</con:sourceStep>
+        <con:sourcePath>//methodResponse[1]/params[1]/param[1]/value[1]/base64[1]</con:sourcePath>
+        <con:targetType>14</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:type>XPATH</con:type>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Properties Transfer</con:name>
+        <con:sourceType>Properies Property</con:sourceType>
+        <con:sourceStep>Properties</con:sourceStep>
+        <con:sourcePath/>
+        <con:targetType>15</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>DataSink Transfer</con:name>
+        <con:sourceType>DataSink Property</con:sourceType>
+        <con:sourceStep>DataSink</con:sourceStep>
+        <con:targetType>16</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>DataGen Transfer</con:name>
+        <con:sourceType>DataGen Property</con:sourceType>
+        <con:sourceStep>DataGen</con:sourceStep>
+        <con:targetType>17</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false" disabled="true">
+        <con:name>Conditioonal Goto Transfer</con:name>
+        <con:sourceStep>Conditional Goto</con:sourceStep>
+        <con:targetStep>SOAP Request</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Run TestCase Transfer</con:name>
+        <con:sourceType>TestCase2 Property</con:sourceType>
+        <con:sourceStep>Run TestCase</con:sourceStep>
+        <con:targetType>18</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Groovy Script Transfer</con:name>
+        <con:sourceType>script</con:sourceType>
+        <con:sourceStep>Groovy Script</con:sourceStep>
+        <con:sourcePath/>
+        <con:targetType>19</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:type>XPATH</con:type>
+        <con:targetTransferType>XQUERY</con:targetTransferType>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false" disabled="true">
+        <con:name>Assertion Transfer</con:name>
+        <con:sourceStep>Assertion</con:sourceStep>
+        <con:targetStep>SOAP Request</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Delay Transfer</con:name>
+        <con:sourceType>delay</con:sourceType>
+        <con:sourceStep>Delay</con:sourceStep>
+        <con:targetType>20</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Manual Transfer</con:name>
+        <con:sourceType>ExpectedResult</con:sourceType>
+        <con:sourceStep>Manual</con:sourceStep>
+        <con:targetType>21</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Virtual Service Runner Transfer</con:name>
+        <con:sourceType>Virt</con:sourceType>
+        <con:sourceStep>Virtual Service Runner</con:sourceStep>
+        <con:targetType>22</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Send Mail Transfer</con:name>
+        <con:sourceType>mailTo</con:sourceType>
+        <con:sourceStep>Send Mail</con:sourceStep>
+        <con:targetType>23</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Create File Transfer</con:name>
+        <con:sourceType>fileName</con:sourceType>
+        <con:sourceStep>Create File</con:sourceStep>
+        <con:targetType>24</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>File Wait Transfer</con:name>
+        <con:sourceType>fileName</con:sourceType>
+        <con:sourceStep>File Wait</con:sourceStep>
+        <con:targetType>25</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Property Wait Transfer</con:name>
+        <con:sourceType>Generation</con:sourceType>
+        <con:sourceStep>Property Wait</con:sourceStep>
+        <con:targetType>26</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>SOAP VirtResponse Transfer</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>SOAP VirtResponse</con:sourceStep>
+        <con:sourcePath>//a[1]</con:sourcePath>
+        <con:targetType>27</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>REST Virt Response Transfer</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>REST VirtResponse</con:sourceStep>
+        <con:sourcePath/>
+        <con:targetType>28</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Publish using MQTT Transfer</con:name>
+        <con:sourceType>Topic</con:sourceType>
+        <con:sourceStep>Publish using MQTT</con:sourceStep>
+        <con:targetType>29</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Drop MQTT Connection Transfer</con:name>
+        <con:sourceType>ServerURI</con:sourceType>
+        <con:sourceStep>Drop MQTT Connection</con:sourceStep>
+        <con:targetType>30</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Receive MQTT Message Transfer</con:name>
+        <con:sourceType>ServerURI</con:sourceType>
+        <con:sourceStep>Receive MQTT Message</con:sourceStep>
+        <con:targetType>31</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>TestComplete Transfer</con:name>
+        <con:sourceType>projectSuiteFile</con:sourceType>
+        <con:sourceStep>TestComplete</con:sourceStep>
+        <con:targetType>32</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>JMS Request Transfer</con:name>
+        <con:sourceType>x</con:sourceType>
+        <con:sourceStep>JMS Request</con:sourceStep>
+        <con:targetType>33</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>FTP Transfer</con:name>
+        <con:sourceType>fileName</con:sourceType>
+        <con:sourceStep>FTP</con:sourceStep>
+        <con:targetType>34</con:targetType>
+        <con:targetStep>Properties2</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="properties" name="Properties2" id="8846fc70-eac8-443d-8741-facc446028e9">
+    <con:settings/>
+    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:properties>
+        <con:property>
+          <con:name>1</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>2</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>3</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>4</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>5</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>6</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>7</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>8</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>9</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>10</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>11</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>12</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>13</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>14</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>15</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>16</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>17</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>18</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>19</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>20</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>21</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>22</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>23</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>24</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>25</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>26</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>27</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>28</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>29</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>30</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>31</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>32</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>33</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>34</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>35</con:name>
+          <con:value/>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="74f20a9f-bcb4-41f3-816d-55de4fb30b74" name="SOAP Request">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:request name="SOAP Request" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="771b2371-0aa3-4ea7-9610-52202b96179b">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:Con_Stroka>
+         <!--Optional:-->
+         <ser:x>SOAP Request Value</ser:x>
+         <!--Optional:-->
+         <ser:y>Value</ser:y>
+      </ser:Con_Stroka>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Con_Stroka"/>
+        <con:wsrmConfig version="1.2"/>
+        <con:environmentSpec>
+          <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+            <con:authProfile>No Authorization</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasource" name="DataSource" id="da8aa284-95a0-4c01-b200-f4f30fcaee61">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>4</generatorsTotalNumber>
+          <lastSelectedProperty>2</lastSelectedProperty>
+          <GeneratorType0>INT</GeneratorType0>
+          <PropertyName0>x</PropertyName0>
+          <repetitionCountx>0</repetitionCountx>
+          <repeatValuesx>false</repeatValuesx>
+          <IntegerDataGeneratorMinValuex>1</IntegerDataGeneratorMinValuex>
+          <IntegerDataGeneratorMaxValuex>100</IntegerDataGeneratorMaxValuex>
+          <IntegerDataGeneratorStepValuex>1</IntegerDataGeneratorStepValuex>
+          <IntegerDataGeneratorConsequentValuesx>false</IntegerDataGeneratorConsequentValuesx>
+          <GeneratorType1>INT</GeneratorType1>
+          <PropertyName1>y</PropertyName1>
+          <repetitionCounty>0</repetitionCounty>
+          <repeatValuesy>false</repeatValuesy>
+          <IntegerDataGeneratorMinValuey>1</IntegerDataGeneratorMinValuey>
+          <IntegerDataGeneratorMaxValuey>100</IntegerDataGeneratorMaxValuey>
+          <IntegerDataGeneratorStepValuey>1</IntegerDataGeneratorStepValuey>
+          <IntegerDataGeneratorConsequentValuesy>false</IntegerDataGeneratorConsequentValuesy>
+          <GeneratorType2>INT</GeneratorType2>
+          <PropertyName2>z</PropertyName2>
+          <repetitionCountz>0</repetitionCountz>
+          <repeatValuesz>false</repeatValuesz>
+          <IntegerDataGeneratorMinValuez>1</IntegerDataGeneratorMinValuez>
+          <IntegerDataGeneratorMaxValuez>100</IntegerDataGeneratorMaxValuez>
+          <IntegerDataGeneratorStepValuez>1</IntegerDataGeneratorStepValuez>
+          <IntegerDataGeneratorConsequentValuesz>false</IntegerDataGeneratorConsequentValuesz>
+          <GeneratorType3>CUSTOM</GeneratorType3>
+          <PropertyName3>DataSource Property</PropertyName3>
+          <repetitionCountDataSource6817b3a273c041e68eceaf2688239737Property>0</repetitionCountDataSource6817b3a273c041e68eceaf2688239737Property>
+          <repeatValuesDataSource6817b3a273c041e68eceaf2688239737Property>false</repeatValuesDataSource6817b3a273c041e68eceaf2688239737Property>
+          <CustomStringDataGeneratorFormatDataSource6817b3a273c041e68eceaf2688239737Property>DataSource Value</CustomStringDataGeneratorFormatDataSource6817b3a273c041e68eceaf2688239737Property>
+          <escapeSpaceSequence>6817b3a273c041e68eceaf2688239737</escapeSpaceSequence>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>x</con:property>
+      <con:property>y</con:property>
+      <con:property>DataSource Property</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request" id="7e0b7aba-b7e7-490f-b2fd-e3d357ab3b2c">
+    <con:settings/>
+    <con:config service="Service 1" methodName="" resourcePath="/WCFREST/Service.svc/Vse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="109e1a4b-b4f6-4c9f-a996-d901a815802d" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://rapis02.aqa.com.ru/WCFREST/Service.svc/Vse</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="x" value="${DataSource#x}"/>
+          <con:entry key="y" value="${DataSource#y}"/>
+          <con:entry key="z" value="+"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+            <con:authProfile>No Authorization</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="826a1c21-5ff6-4d3f-ae82-ac4a2662b508">
+    <con:description>123</con:description>
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>DataSource</dataSourceStep>
+      <targetStep>REST Request</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="httprequest" name="HTTP Request" id="a9b6810c-72f0-41f0-a843-10324c9e6816">
+    <con:settings/>
+    <con:config method="GET" xsi:type="con:HttpRequest" id="99f2de19-7c5c-4416-9e5b-c89df3359b55" name="HTTP Request" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://rapis02.aqa.com.ru/WCFREST/Service.svc/Vse</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>x</con:name>
+          <con:value>10</con:value>
+          <con:style>QUERY</con:style>
+          <con:default>10</con:default>
+          <con:path xsi:nil="true"/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>y</con:name>
+          <con:value>10</con:value>
+          <con:style>QUERY</con:style>
+          <con:default>10</con:default>
+          <con:path xsi:nil="true"/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>z</con:name>
+          <con:value>+</con:value>
+          <con:style>QUERY</con:style>
+          <con:default>+</con:default>
+          <con:path xsi:nil="true"/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:environmentSpec>
+        <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="amfrequest" name="AMF Request" id="4e908b8a-2125-4504-aa31-c7417a24e375">
+    <con:settings/>
+    <con:config xsi:type="con:AMFRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:properties>
+        <con:property>
+          <con:name>AMF Request Property</con:name>
+          <con:value>AMF Request Value</con:value>
+        </con:property>
+      </con:properties>
+      <con:endpoint>http://rapis01.aqa.com.ru:8400/RegTest/messagebroker/amf</con:endpoint>
+      <con:amfCall>RegTestServiceDestination.getNumber</con:amfCall>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="jdbc" name="JDBC Request" id="8890cf75-f682-4606-9542-620ac8255475">
+    <con:settings>
+      <con:setting id="prettyPrintResponse">true</con:setting>
+    </con:settings>
+    <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dbConnectionName>MSSQL</con:dbConnectionName>
+      <con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver>
+      <con:connectionString>jdbc:sqlserver://rapis01.aqa.com.ru:1433;databaseName=DatabaseVariable;user=DatabaseVariable;password=PASS_VALUE</con:connectionString>
+      <con:password>DatabaseVariable</con:password>
+      <con:connectionProperties/>
+      <con:query>Select Test.Value1, Test.Value2
+From Test</con:query>
+      <con:properties>
+        <con:property>
+          <con:name>JDBC Request Property</con:name>
+          <con:value>JDBC Request Value</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep name="GraphQL Query" type="graphqltestqueryrequest" id="82ae54f9-13a0-4b21-8aa3-11721c6099e3">
+    <con:settings/>
+    <con:config interface="GraphQL Service 1" operationName="customer" operationType="query" xsi:type="con:GraphQLTestRequestWithSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:request name="GraphQL Query" id="76bd5f53-cb07-4177-81af-3fd364a50fc7">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://rapis02.aqa.com.ru:4005/graphql</con:endpoint>
+        <con:request>{"query":"query {\n  customer(id: \"string\") {\n    id\n    name\n    email\n    age\n    gender\n    status\n    products {\n      productID\n      productName\n      quantity\n      info {\n        made\n        design\n        warranty\n        AnnualFailureRate\n      }\n      availableIn\n    }\n    data {\n      LicenseType\n      Status\n    }\n  }\n}\n","operationName":null,"variables":null}</con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep name="GraphQL Mutation" type="graphqltestmutationrequest" id="947f561f-1090-466b-8ef5-5879cc8e2d3f">
+    <con:settings/>
+    <con:config interface="GraphQL Service 1" operationName="editCustomer" operationType="mutation" xsi:type="con:GraphQLTestRequestWithSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:request name="GraphQL Mutation" id="a5c4959a-8f5f-4bf3-8a3c-b95bde6062ff">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://rapis02.aqa.com.ru:4005/graphql</con:endpoint>
+        <con:request>{"query":"mutation {\n  editCustomer(id: \"YpNuvVX\", name: \"string\", email: \"string\", age: 0, gender: MALE, extraData: \"string\") {\n    id\n    name\n    email\n    age\n    gender\n    status\n    products {\n      productID\n      productName\n      quantity\n      info {\n        made\n        design\n        warranty\n        AnnualFailureRate\n      }\n      availableIn\n    }\n    data {\n      LicenseType\n      Status\n    }\n  }\n}","operationName":null,"variables":null}</con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:environmentSpec>
+          <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="graphqltestrequest" name="GraphQL Request" id="4e9c4d35-c061-41dd-a1c9-0d2452596fe4">
+    <con:settings/>
+    <con:config xsi:type="con:GraphQLTestRequest" id="5500a65d-a0a4-4fcc-98f1-2dc9eb90e3ca" name="GraphQL Request" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://api.graph.cool/simple/v1/ciyz901en4j590185wkmexyex?query={allUsers{name}}</con:endpoint>
+      <con:request>{"query":null,"operationName":null,"variables":"{\n  customers{    \n    name,\n    age,\n    email,\n    status,\n    products {\n      productID\n      productName\n      quantity\n      info {\n        made\n        disign\n        warranty\n      }\n    }\n  }\n}"}</con:request>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="XmlRpcTestStep" name="XML-RPC" id="8cd7e03e-e349-4a6a-9339-a5830d62adee">
+    <con:settings/>
+    <con:config xsi:type="con:XmlRpcStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:service>Xmlrpcapi.rem</con:service>
+      <con:operation>XmlRpc.TestBase64</con:operation>
+      <con:requestContent/>
+      <con:request id="781a0b5f-bd31-4f2f-92d2-2d0331ba85ea" name="XML-RPC">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/xmlrpc/xmlrpcapi.rem</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+      </con:request>
+      <con:parameter>base64</con:parameter>
+      <con:resultParameter>base64</con:resultParameter>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="properties" name="Properties" id="ba0da966-f680-4396-b6fd-c4729747b9ec">
+    <con:settings/>
+    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:properties>
+        <con:property>
+          <con:name>Prop1</con:name>
+          <con:value>Value1</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Prop2</con:name>
+          <con:value>Value2</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Prop3</con:name>
+          <con:value>Value3</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Properies Property</con:name>
+          <con:value>Properties Value</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="DataSink" id="ae415605-fb5f-42ee-a961-252e87badddc">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="Property">
+        <con:configuration>
+          <prefix>Data</prefix>
+          <content>Sink</content>
+          <suffix>Property</suffix>
+          <property>DataSinkProperty</property>
+        </con:configuration>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>DataSinkProperty</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>DataSink Property</con:name>
+          <con:value>DataSink Value</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datagen" name="DataGen" id="0a4acacd-db43-4b9c-813b-37ae3ac675f7">
+    <con:settings/>
+    <con:config xsi:type="con:DataGeneratorStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:property type="Number">
+        <con:configuration>
+          <start>1</start>
+          <end>1</end>
+          <step>1</step>
+          <pattern/>
+          <random>false</random>
+          <persist>false</persist>
+        </con:configuration>
+        <con:name>DataGen Property</con:name>
+        <con:mode>STEP</con:mode>
+        <con:shared>false</con:shared>
+      </con:property>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="goto" name="Conditional Goto" id="394c9009-a565-4499-b37a-c86822405b0d">
+    <con:settings/>
+    <con:config xsi:type="con:GotoStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:condition>
+        <con:name>Condition 1</con:name>
+        <con:type>XPATH</con:type>
+        <con:expression>declare namespace ns1='https://api.graph.cool/simple/v1/ciyz901en4j590185wkmexyex';
+//ns1:Response[1]/ns1:code[1]</con:expression>
+        <con:targetStep>REST Request</con:targetStep>
+      </con:condition>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="calltestcase" name="Run TestCase" id="81b62831-314d-4718-a569-5206a72d7aab">
+    <con:settings/>
+    <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:targetTestCase>fe403e6b-a651-48eb-9bb3-0872408d5c1b</con:targetTestCase>
+      <con:properties>
+        <con:property>
+          <con:name>TestCase2 Property</con:name>
+          <con:value>TestCase2 Value</con:value>
+        </con:property>
+        <con:property>
+          <con:name>TestCase2Property2</con:name>
+        </con:property>
+      </con:properties>
+      <con:returnProperties>
+        <con:entry>TestCase2 Property</con:entry>
+      </con:returnProperties>
+      <con:runMode>PARALLELL</con:runMode>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Groovy Script" id="5434c7de-825a-4f61-867d-3c29bdf3ceae">
+    <con:settings/>
+    <con:config>
+      <script>log.info("Groovy Script Message");</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="assertionteststep" name="Assertion" id="3cb035fb-58d0-4b82-a4a8-d6270dccc75c">
+    <con:settings/>
+    <con:config xsi:type="con:AssertionTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:entry>
+        <con:id>02cc1143-8f91-414b-84c6-2e524fa09695</con:id>
+        <con:isGroup>false</con:isGroup>
+        <con:sourceId>74f20a9f-bcb4-41f3-816d-55de4fb30b74</con:sourceId>
+        <con:propertyName>Response</con:propertyName>
+        <con:assertion type="Simple Contains" name="Contains" id="f332fa0b-cd1b-4e85-9692-97270c8b2708">
+          <con:configuration>
+            <token>SOAP String</token>
+            <ignoreCase>false</ignoreCase>
+            <useRegEx>false</useRegEx>
+          </con:configuration>
+        </con:assertion>
+      </con:entry>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="delay" name="Delay" id="b08ba091-e0f9-48be-8e66-4b6b3489ff5f">
+    <con:settings/>
+    <con:config>
+      <delay>1000</delay>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="manualTestStep" name="Manual" id="cd70df97-50ec-4e8b-954f-02861b2b63ed">
+    <con:description>Manual Description</con:description>
+    <con:settings/>
+    <con:config xsi:type="con:ManualTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:expectedResult>Expected Result</con:expectedResult>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="VirtRunnerTestStep" name="Virtual Service Runner" id="b4133dce-afdd-421a-bce0-226b64346fda">
+    <con:settings/>
+    <con:config>
+      <url>localhost</url>
+      <server>REST Virtual Service 1</server>
+      <action>run</action>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="sendmailteststep" name="Send Mail" id="66fc1600-880a-4cdf-83ae-a5c1bd0bc566">
+    <con:settings/>
+    <con:config>
+      <subject>RegTests</subject>
+      <message>HELLO MAN</message>
+      <server>mail.aqa.com.ru</server>
+      <port>25</port>
+      <login>qa@smartbear.ru</login>
+      <password>5EeSnV5n</password>
+      <mailTo>qa@smartbear.ru</mailTo>
+      <mailFrom>qa@smartbear.ru</mailFrom>
+      <timeout>100</timeout>
+      <timeout_measure>0</timeout_measure>
+      <StartTLSEnabled>false</StartTLSEnabled>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="CreateAndWaitForRemoveFile" name="Create File" id="511e4fd6-f337-4bf4-bcdf-69a454e1e2e6">
+    <con:settings/>
+    <con:config>
+      <FileName>TempFile</FileName>
+      <FileContent>Content File of Temp</FileContent>
+      <FolderPath>${projectDir}</FolderPath>
+      <Timeout>0</Timeout>
+      <WaitForFileRemove>false</WaitForFileRemove>
+      <OverwriteExisting>true</OverwriteExisting>
+      <FileEncoding>Unicode</FileEncoding>
+      <Precision>seconds</Precision>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="fileWaitTestStep" name="File Wait" id="84fcf57c-f8ec-45c6-9c5d-b4262adc2dca">
+    <con:settings/>
+    <con:config>
+      <FileName>${projectDir}\TempFile</FileName>
+      <Timeout>2000</Timeout>
+      <timeout_measure>0</timeout_measure>
+      <DeleteFile>false</DeleteFile>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="propertyWaitTestStep" name="Property Wait" id="667f672a-168c-446f-81de-12b62fd1c195">
+    <con:settings/>
+    <con:config>
+      <scope>Test Suite Properties</scope>
+      <projectName>All-Test-Step-Project</projectName>
+      <testSuiteName>TestSuite 1</testSuiteName>
+      <mockServiceName/>
+      <mockOperationName/>
+      <mockResponseName/>
+      <propertyName>TestSuite Property</propertyName>
+      <compareMethodName>Equals (==)</compareMethodName>
+      <valueToCompare>TestSuite Value</valueToCompare>
+      <timeout>10</timeout>
+      <timeoutMeasureName>seconds</timeoutMeasureName>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="mockresponse" name="SOAP VirtResponse" id="b3e19137-9498-4968-8d22-171efdbe28d9">
+    <con:settings/>
+    <con:config xsi:type="con:MockResponseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:path>/</con:path>
+      <con:port>8080</con:port>
+      <con:response id="016751b8-fe41-4078-86f3-c3b5a8e787ec" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070">
+        <con:settings/>
+        <con:responseContent>&lt;a>SOAP VirtResponse Value&lt;/a></con:responseContent>
+        <con:wsaConfig mustUnderstand="NONE" version="200508"/>
+      </con:response>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restmockresponse" name="REST VirtResponse" id="c8fa3aa4-4524-46f8-b470-7be9ede9bbb1">
+    <con:settings/>
+    <con:config xsi:type="con:RESTMockResponseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Service 1</con:interface>
+      <con:path>/WCFREST/Service.svc/Vse</con:path>
+      <con:method>GET</con:method>
+      <con:port>8080</con:port>
+      <con:response mediaType="application/xml" httpResponseStatus="200" id="ccc30c81-3ca3-4220-948a-eb20a169247b">
+        <con:settings/>
+        <con:responseContent>&lt;a>SOAP VirtResponse Value&lt;/a></con:responseContent>
+      </con:response>
+      <con:host>localhost</con:host>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="MQTTPublishTestStep" name="Publish using MQTT" id="02e01166-57fe-45b3-9c47-ce47bad318b2">
+    <con:settings/>
+    <con:config>
+      <LegacyConnection>false</LegacyConnection>
+      <ConnectionName/>
+      <Timeout>30000</Timeout>
+      <TimeoutMeasure>Seconds</TimeoutMeasure>
+      <MessageKind>Json</MessageKind>
+      <Topic>Publish using MQTT value</Topic>
+      <Message/>
+      <QoS>0</QoS>
+      <Retained>false</Retained>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="MQTTDropConnectionTestStep" name="Drop MQTT Connection" id="31abf3bb-3a21-4a01-bf93-751266fbaffa">
+    <con:settings/>
+    <con:config>
+      <LegacyConnection>false</LegacyConnection>
+      <ConnectionName>Drop MQTT connection value</ConnectionName>
+      <Timeout>30000</Timeout>
+      <TimeoutMeasure>Seconds</TimeoutMeasure>
+      <DropMethod>SendDisconnect</DropMethod>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="MQTTReceiveTestStep" name="Receive MQTT Message" id="b9098a23-b48c-4920-bdc3-2ec0c696ef51">
+    <con:settings/>
+    <con:config>
+      <LegacyConnection>false</LegacyConnection>
+      <ConnectionName>Drop MQTT connection value</ConnectionName>
+      <Timeout>30000</Timeout>
+      <TimeoutMeasure>Seconds</TimeoutMeasure>
+      <ListenedTopics>Publish using MQTT value</ListenedTopics>
+      <QoS>0</QoS>
+      <ExpectedMessageType>Utf8Text</ExpectedMessageType>
+      <OnUnexpectedTopic>Ignore</OnUnexpectedTopic>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="tcintegrationteststep" name="TestComplete" id="2d952549-7fa1-4011-9c25-d317238c017e">
+    <con:settings/>
+    <con:config>
+      <timeout/>
+      <executionResult>0</executionResult>
+      <resultDescription/>
+      <testRunner>TestComplete 14</testRunner>
+      <runMode/>
+      <exportTestLog/>
+      <silentModeLog/>
+      <projectSuiteFile>TestComplete Value</projectSuiteFile>
+      <projectName/>
+      <scriptUnit/>
+      <scriptRoutine/>
+      <silentMode>false</silentMode>
+      <showTestLog>false</showTestLog>
+      <warningAsError>false</warningAsError>
+      <test/>
+      <otherTest/>
+      <otherArgs/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="JMS" name="JMS Request" id="a356010c-2bb5-4df9-9913-e9cc93924c89">
+    <con:settings/>
+    <con:config service="Service 1" methodName="" resourcePath="/WCFREST/Service.svc/Stroka" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="JMS Request" id="e2c45674-ea04-4c5d-a318-c402cde90c51" mediaType="application/json" postQueryString="false">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>readyjms://ActiveMQ::Q1::Q2</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters>
+          <con:entry key="x" value="JMS Request Value"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="ftp" name="FTP" id="f9cf9d44-d354-415a-9887-6d845a1dc397">
+    <con:settings/>
+    <con:config xsi:type="con:FTPTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:host>localhost</con:host>
+      <con:port>688</con:port>
+      <con:user>Tester</con:user>
+      <con:password>Test_All</con:password>
+      <con:transaction>
+        <con:fileName>FTP Value</con:fileName>
+        <con:localPath>C:\aaa.txt</con:localPath>
+      </con:transaction>
+    </con:config>
+  </con:testStep>
+  <con:properties>
+    <con:property>
+      <con:name>TestCase Property</con:name>
+      <con:value>TestCase Value</con:value>
+    </con:property>
+  </con:properties>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>da8aa284-95a0-4c01-b200-f4f30fcaee61</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>e6844120-d0f3-4344-ad97-821f664bbae3</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>8846fc70-eac8-443d-8741-facc446028e9</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>b3e19137-9498-4968-8d22-171efdbe28d9</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>947f561f-1090-466b-8ef5-5879cc8e2d3f</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

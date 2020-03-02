@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/Entitize" method="GET" resourcePath="/Entitize" id="aa28ddae-86bb-4f17-b080-6d6c4c7dcb9d" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="aa28ddae-86bb-4f17-b080-6d6c4c7dcb9dfileName">%2FEntitize</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="SpecialCharacters" id="8388449d-03e5-4796-85d0-b1ca76936c49" httpResponseStatus="200" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="">
+    <con:settings/>
+    <con:responseContent>T&lt;r>a&amp;n&lt;>s&amp;&amp;f&lt;&amp;>r</con:responseContent>
+  </con:response>
+</con:restMockAction>

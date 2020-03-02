@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestDateTime" help="         DateTime       " id="6beac842-2e7e-40c9-b49b-9b671881730e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6beac842-2e7e-40c9-b49b-9b671881730efileName">XmlRpc.TestDateTime</con:setting>
+  </con:settings>
+  <con:call id="7f63b201-cf14-494c-b1d5-4efe9e4437d8" name="Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/xmlrpc/xmlrpcapi.rem</con:endpoint>
+    <con:request><![CDATA[<methodCall>
+<methodName>XmlRpc.TestDateTime</methodName>
+<params>
+<param><value><dateTime></dateTime></value></param>
+</params>
+</methodCall>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:environmentSpec>
+      <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+        <con:authProfile>No Authorization</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:call>
+  <con:resultParameter>dateTime</con:resultParameter>
+  <con:parameter>dateTime</con:parameter>
+</con:method>

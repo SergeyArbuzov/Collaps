@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="a85c2190-8f61-404d-8ed8-080962f1472c" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 2" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a85c2190-8f61-404d-8ed8-080962f1472cfileName">TestCase-2</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="0147ce65-78b7-477e-9666-71547ed102a3" name="SOAP Request">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:request name="SOAP Request" id="94cf1866-b798-49cb-b1c2-f290c7e2abec">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:Con_Stroka>\r
+         <!--Optional:-->\r
+         <ser:x>?</ser:x>\r
+         <!--Optional:-->\r
+         <ser:y>?</ser:y>\r
+      </ser:Con_Stroka>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Con_Stroka"/>
+        <con:environmentSpec>
+          <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+            <con:authProfile>No Authorization</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="transfer" name="Property Transfer" id="46e68bbc-5009-48a2-bc79-8d82ba4b675c">
+    <con:settings/>
+    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:transfers setNullOnMissingSource="false" transferTextContent="false" failOnError="false" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>NameSpaces</con:name>
+        <con:sourceType>Request</con:sourceType>
+        <con:sourceStep>SOAP Request</con:sourceStep>
+        <con:sourcePath>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://localhost/test_service/Service1.asmx/AbstractTypes';
+declare namespace ns2='http://microsoft.com/wsdl/types/';
+declare namespace ns3='http://localhost/test_service/Service1.asmx';</con:sourcePath>
+        <con:targetType>Request</con:targetType>
+        <con:targetStep>SOAP Request</con:targetStep>
+        <con:targetPath>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://localhost/test_service/Service1.asmx/AbstractTypes';
+declare namespace ns2='http://microsoft.com/wsdl/types/';
+declare namespace ns3='http://localhost/test_service/Service1.asmx';</con:targetPath>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

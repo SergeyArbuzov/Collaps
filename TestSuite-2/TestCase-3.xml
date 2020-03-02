@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="5ebdd860-eaf3-4ee1-a31b-b5de7f062ad0" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 3" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5ebdd860-eaf3-4ee1-a31b-b5de7f062ad0fileName">TestCase-3</con:setting>
+  </con:settings>
+  <con:testStep type="transfer" name="Property Transfer" id="d7e5c7a4-9b5e-447d-a9fe-6897b76c95b2">
+    <con:settings/>
+    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Prop1</con:name>
+        <con:sourceType>Prop1</con:sourceType>
+        <con:sourceStep>#TestCase#</con:sourceStep>
+        <con:sourcePath/>
+        <con:targetType>Prop1</con:targetType>
+        <con:targetStep>Properties</con:targetStep>
+        <con:targetPath/>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Prop2</con:name>
+        <con:sourceType>Prop2</con:sourceType>
+        <con:sourceStep>#TestCase#</con:sourceStep>
+        <con:targetType>Prop2</con:targetType>
+        <con:targetStep>Properties</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="false" transferTextContent="false" failOnError="false" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Prop3</con:name>
+        <con:sourceType>Prop3</con:sourceType>
+        <con:sourceStep>#TestCase#</con:sourceStep>
+        <con:targetType>Prop3</con:targetType>
+        <con:targetStep>Properties</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="properties" name="Properties" id="f7733531-ff69-4c3b-addc-54521fafec31">
+    <con:settings/>
+    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:properties>
+        <con:property>
+          <con:name>Prop1</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>Prop2</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>Prop3</con:name>
+          <con:value/>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:properties>
+    <con:property>
+      <con:name>Prop1</con:name>
+      <con:value>Value1</con:value>
+    </con:property>
+    <con:property>
+      <con:name>Prop2</con:name>
+      <con:value>Value2</con:value>
+    </con:property>
+    <con:property>
+      <con:name>Prop3</con:name>
+      <con:value>Value3</con:value>
+    </con:property>
+  </con:properties>
+  <con:reportParameters/>
+</con:testCase>

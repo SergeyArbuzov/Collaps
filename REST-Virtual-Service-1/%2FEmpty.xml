@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/Empty" method="GET" resourcePath="/Empty" id="a8062bf6-bcde-466b-a927-037258844131" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a8062bf6-bcde-466b-a927-037258844131fileName">%2FEmpty</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+</con:restMockAction>

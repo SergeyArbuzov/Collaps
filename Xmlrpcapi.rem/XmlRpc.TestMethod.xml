@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestMethod" help="         Method without parameters       " id="1f6e602f-d2a3-4a10-b8ac-f62130497b43" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1f6e602f-d2a3-4a10-b8ac-f62130497b43fileName">XmlRpc.TestMethod</con:setting>
+  </con:settings>
+  <con:call id="1558d3a6-4c1d-4ed1-88bd-08d0fa06e322" name="Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/xmlrpc/xmlrpcapi.rem</con:endpoint>
+    <con:request><![CDATA[<methodCall>
+<methodName>XmlRpc.TestMethod</methodName>
+<params>
+</params>
+</methodCall>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:environmentSpec>
+      <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+        <con:authProfile>No Authorization</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:call>
+  <con:resultParameter>string</con:resultParameter>
+</con:method>

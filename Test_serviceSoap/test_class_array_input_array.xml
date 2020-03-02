@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="c654ae04-0f3e-4bc1-8aac-23fc43fdc2ca" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_class_array_input_array" name="test_class_array_input_array" bindingOperationName="test_class_array_input_array" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c654ae04-0f3e-4bc1-8aac-23fc43fdc2cafileName">test_class_array_input_array</con:setting>
+  </con:settings>
+  <con:call id="e3586f0e-4cac-4fc3-939b-c5891595a415" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:test_class_array_input_array>\r
+         <!--Optional:-->\r
+         <ser:tt>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:test>\r
+               <ser:test_int>?</ser:test_int>\r
+               <!--Optional:-->\r
+               <ser:test_string>?</ser:test_string>\r
+               <!--Optional:-->\r
+               <ser:test_transfer_array>?</ser:test_transfer_array>\r
+               <!--Optional:-->\r
+               <ser:test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <ser:int>?</ser:int>\r
+               </ser:test_array>\r
+            </ser:test>\r
+         </ser:tt>\r
+      </ser:test_class_array_input_array>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/test_class_array_input_array"/>
+    <con:environmentSpec>
+      <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+        <con:authProfile>No Authorization</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:call>
+</con:operation>

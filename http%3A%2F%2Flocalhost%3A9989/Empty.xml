@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Empty" path="/Empty" id="58256651-5fbe-4942-ba59-0d206bfbab48" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="58256651-5fbe-4942-ba59-0d206bfbab48fileName">Empty</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="e43b3927-4e54-47e9-b74e-9e37dda53e9e" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="e7782157-d275-4d0e-8b52-d8e415523c37" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost:9989</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+  </con:method>
+</con:resource>

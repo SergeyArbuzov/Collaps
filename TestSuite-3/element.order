@@ -1,0 +1,7 @@
+FailTransferOnError.xml
+TransferTextContent.xml
+Transfer-to-all.xml
+EntitizeTransferredValue.xml
+SetNullOnMissingSource.xml
+IgnoreEmptyMissingValues.xml
+TransferChildNodes.xml

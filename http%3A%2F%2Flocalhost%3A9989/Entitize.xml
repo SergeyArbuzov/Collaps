@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Entitize" path="/Entitize" id="2e96b3c1-aeff-4ab1-a7d3-8e82db824b30" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2e96b3c1-aeff-4ab1-a7d3-8e82db824b30fileName">Entitize</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="0e832752-ed71-4d1e-a798-1ce7c6927453" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="084ac8f7-d6a0-4ea9-a25f-6b24bfeb294b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost:9989</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+  </con:method>
+</con:resource>

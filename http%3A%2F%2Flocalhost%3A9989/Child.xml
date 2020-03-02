@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Child" path="/Child" id="79ead868-d0e8-430c-b9f6-9644c2c7bcd3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="79ead868-d0e8-430c-b9f6-9644c2c7bcd3fileName">Child</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="452f41ca-d52e-4392-9b67-c1021657240d" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="FAULT">
+      <con:mediaType xsi:nil="true"/>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:element>data</con:element>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element>bookstore</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="3e080e6e-0f02-4bfd-bb74-da89de3bad87" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost:9989</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+  </con:method>
+</con:resource>

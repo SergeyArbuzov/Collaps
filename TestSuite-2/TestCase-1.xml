@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="19c42232-fef7-4c72-af92-13e8400f0936" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="19c42232-fef7-4c72-af92-13e8400f0936fileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="VirtRunnerTestStep" name="Run Virtual Service" id="0561fecf-12e4-42a5-b833-4e8061cd3114">
+    <con:settings/>
+    <con:config>
+      <url>localhost</url>
+      <server>REST Virtual Service 1</server>
+      <action>run</action>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="6554de63-bd0d-4c81-b304-3d46aaa255dd" name="SOAP Request">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:request name="SOAP Request" id="c54888b9-65c4-4349-8eb9-3e548415a679">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:Con_Stroka>
+         <!--Optional:-->
+         <ser:x>Con</ser:x>
+         <!--Optional:-->
+         <ser:y>Stroka</ser:y>
+      </ser:Con_Stroka>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Con_Stroka" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+        <con:environmentSpec>
+          <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+            <con:authProfile>No Authorization</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request" id="324ead41-b54f-4626-bd77-4a5322b1b92e">
+    <con:settings/>
+    <con:config service="http://localhost:9989" resourcePath="" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="ef0293f7-56c0-4e97-bac1-30f5228b7451" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://localhost:9989</con:endpoint>
+        <con:request>{\r
+   "eBooks" : [\r
+      {\r
+         "language" : "Pascal",\r
+         "edition" : "third"\r
+      }\r
+   ]\r
+}</con:request>
+        <con:originalUri>http://localhost/</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+            <con:authProfile>No Authorization</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="httprequest" name="HTTP Request" id="3da22eac-a8fe-4114-a802-ccb4a22a2a50">
+    <con:settings/>
+    <con:config method="GET" xsi:type="con:HttpRequest" id="da8e402b-1a87-4acb-b2f4-443487766861" name="HTTP Request" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://localhost:9989/HTTP</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="6b6476bf-a50e-419f-8505-5766c16c4ec3">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasource" name="DataSource" id="d6995427-9aba-4e99-9b69-06870006f074">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Grid">
+        <con:configuration>
+          <check>&lt;xml-fragment/></check>
+          <recognizeAsPlainText>true</recognizeAsPlainText>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="properties" name="Properties" id="2aa98cb9-fb4e-4fd6-90e2-748664c917c4">
+    <con:settings/>
+    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:properties>
+        <con:property>
+          <con:name>SOAP Request</con:name>
+          <con:value>{    "eBooks":[       {          "language":"Pascal",          "edition":"third"       }   ] }</con:value>
+        </con:property>
+        <con:property>
+          <con:name>REST Request</con:name>
+          <con:value><![CDATA[<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">    <soap:Body>       <Con_StrokaResponse xmlns="http://localhost/test_service/Service1.asmx">          <Con_StrokaResult>Con Stroka</Con_StrokaResult>       </Con_StrokaResponse>    </soap:Body> </soap:Envelope>]]></con:value>
+        </con:property>
+        <con:property>
+          <con:name>DataSource</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>HTTP Request</con:name>
+          <con:value><![CDATA[<?xml version="1.0" encoding="UTF-8"?>  <petstore>  <pet category="Animal"> 	<name>Bobik</name> </pet> </petstore>]]></con:value>
+        </con:property>
+        <con:property>
+          <con:name>Property with value</con:name>
+          <con:value>Property Value</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Property is updated</con:name>
+          <con:value/>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="transfer" name="Property Transfer" id="8f1f3ab2-4878-4c31-a4bd-1d80bda1ec2e">
+    <con:settings/>
+    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:transfers setNullOnMissingSource="false" transferTextContent="false" failOnError="false" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false" disabled="false">
+        <con:name>SOAP Request Transfer</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>SOAP Request</con:sourceStep>
+        <con:sourcePath/>
+        <con:targetType>SOAP Request</con:targetType>
+        <con:targetStep>Properties</con:targetStep>
+        <con:targetPath/>
+        <con:type>XPATH</con:type>
+        <con:targetTransferType>JSONPATH</con:targetTransferType>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="false" transferTextContent="false" failOnError="false" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>REST Request Transfer</con:name>
+        <con:sourceType>Request</con:sourceType>
+        <con:sourceStep>REST Request</con:sourceStep>
+        <con:sourcePath/>
+        <con:targetType>REST Request</con:targetType>
+        <con:targetStep>Properties</con:targetStep>
+        <con:targetPath/>
+        <con:type>JSONPATH</con:type>
+        <con:targetTransferType>XPATH</con:targetTransferType>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="false" transferTextContent="false" failOnError="false" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>DataSource Transfer</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>HTTP Request</con:sourceStep>
+        <con:sourcePath/>
+        <con:targetType>DataSource</con:targetType>
+        <con:targetStep>Properties</con:targetStep>
+        <con:targetPath/>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="false" transferTextContent="false" failOnError="false" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>HTTP Request Transfer</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>HTTP Request</con:sourceStep>
+        <con:sourcePath/>
+        <con:targetType>HTTP Request</con:targetType>
+        <con:targetStep>Properties</con:targetStep>
+        <con:targetPath/>
+        <con:type>XQUERY</con:type>
+        <con:targetTransferType>XQUERY</con:targetTransferType>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="false" transferTextContent="false" failOnError="false" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false" disabled="false">
+        <con:name>Properties Transfer</con:name>
+        <con:sourceType>Property is updated</con:sourceType>
+        <con:sourceStep>Properties</con:sourceStep>
+        <con:sourcePath/>
+        <con:targetType>Property is updated</con:targetType>
+        <con:targetStep>Properties</con:targetStep>
+        <con:targetPath/>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="VirtRunnerTestStep" name="Stop Virtual Service" id="a5129c84-29fc-473e-8ddc-cb47cd8acbe7">
+    <con:settings/>
+    <con:config>
+      <url>localhost</url>
+      <server>REST Virtual Service 1</server>
+      <action>stop</action>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>324ead41-b54f-4626-bd77-4a5322b1b92e</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>8f1f3ab2-4878-4c31-a4bd-1d80bda1ec2e</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>0561fecf-12e4-42a5-b833-4e8061cd3114</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>a5129c84-29fc-473e-8ddc-cb47cd8acbe7</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>d6995427-9aba-4e99-9b69-06870006f074</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>
