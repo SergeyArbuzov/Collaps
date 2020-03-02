@@ -41,11 +41,11 @@ Test_serviceSoap\test_ushort.xml
 Test_serviceSoap\transfer_XML.xml
 Test_serviceSoap\transfer_array.xml
 Service-1\ConStroka.xml
-Service-1\Resource.xml
 Service-1\GetAllRecords.xml
 Service-1\HelloWorld.xml
 Service-1\InputDate.xml
 Service-1\Ran.xml
+Service-1\Resource.xml
 Service-1\Stroka.xml
 Service-1\TestClassArray2InputArray.xml
 Service-1\Vse.xml
